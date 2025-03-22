@@ -11,7 +11,7 @@ var empresa;
     const campoCompra = document.getElementById("campoCompra");
     const btnComprar = document.getElementById("comprar");
     calc.addEventListener("click", () => {
-        let p = new empresa.Cliente(parseInt(campoCodigo.value));
+        p = new empresa.Cliente(parseInt(campoCodigo.value));
         p.nome = campoNome.value;
         p.anoNasc = parseInt(campoAno.value);
         //p.saldo = 100;

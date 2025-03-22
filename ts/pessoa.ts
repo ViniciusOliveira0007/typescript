@@ -8,8 +8,7 @@ namespace empresa{
         }
 
         set nome(nome:string){
-            this._nome=nome;
-            
+            this._nome = nome;
         }
 
         get anoNasc(){

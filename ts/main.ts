@@ -17,11 +17,12 @@ namespace empresa{
     
 
     calc.addEventListener("click", ()=>{
-    let p = new Cliente(parseInt(campoCodigo.value));
+    p = new Cliente(parseInt(campoCodigo.value));
     p.nome = campoNome.value;
     p.anoNasc = parseInt(campoAno.value);
     
     //p.saldo = 100;
+   
 
 
     document.getElementById("nome").textContent =p.nome;
@@ -34,8 +35,9 @@ namespace empresa{
     });
 
     btnDeposito.addEventListener("click", ()=>{
-        p.deposita(parseFloat(campoDeposito.value));
-        document.getElementById("saldo").textContent = p.saldo.toString();
+      
+       p.deposita(parseFloat(campoDeposito.value));
+       document.getElementById("saldo").textContent = p.saldo.toString();
     });
 
     btnComprar.addEventListener("click", ()=>{

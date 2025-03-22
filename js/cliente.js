@@ -10,14 +10,8 @@ var empresa;
         get codigo() {
             return this._codigo;
         }
-        set codigo(codigo) {
-            this._codigo = codigo;
-        }
         get saldo() {
             return this._saldo;
-        }
-        set saldo(saldo) {
-            this._saldo = saldo;
         }
         deposita(valor) {
             this._saldo += valor;
